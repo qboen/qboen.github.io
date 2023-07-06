@@ -1,0 +1,517 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M35W3FJWV7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M35W3FJWV7');
+  </script>
+  <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 CSS 文件 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/youlu.css"
+  >
+
+  <title>探索鹿径</title>
+  <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body class="body-bg">
+
+  <!---这是导航栏--->
+  <nav class="navbar navbar-expand-md nav mb-5">
+    <div class="container-fluid">
+      <a
+        class="navbar-brand"
+        href="index.html"
+        target="_blank"
+      >
+        有 鹿 🦌
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              target="_self"
+            >&nbsp;探索鹿径&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="jobCollection.html"
+              target="_blank"
+            >&nbsp;职业总览&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="lu.html"
+              target="_blank"
+            >&nbsp;我的鹿径</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 翻页按钮 -->
+  <div class="btn-page">
+    <div id="btn-back"><img
+        src="https://www.svgrepo.com/show/15882/up-arrow.svg"
+        alt=""
+      ></div>
+    <div id="btn-next"><img
+        src="https://www.svgrepo.com/show/15882/up-arrow.svg"
+        alt=""
+      ></div>
+  </div>
+
+  <div class="container-fluid">
+    <!-- 在外面套个框 -->
+    <section class="border-main py-2 px-5 bg-light">
+      <!-- 步骤进度条 -->
+      <div class="container py-4 mb-3">
+        <div class="row">
+
+          <div
+            class="col-4 steps steps-visited steps-first"
+            value="1"
+          >
+            <h4><span>步骤一</span><br>你的个性和兴趣</h4>
+          </div>
+          <div
+            class="col-4 steps steps-middle"
+            value="2"
+          >
+            <h4><span>步骤二</span><br>填写你的学校专业</h4>
+          </div>
+          <div
+            class="col-4 steps steps-last"
+            value="3"
+          >
+            <h4><span>步骤三</span><br>选择你的理想职业</h4>
+          </div>
+        </div>
+      </div>
+      <!-- 兴趣卡片 -->
+      <div class="interest">
+        <div class="row mb-4">
+          <!-- 兴趣卡片1 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">精力支配</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">内向I</span><span
+                  class="choice_2">外向E</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-1"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-1"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片2 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">认识世界</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">实感S</span><span
+                  class="choice_2">直觉N</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-2"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-2"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片3 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">判断事物</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">思维T</span><span
+                  class="choice_2">情感F</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-3"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-3"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片4 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">生活方式</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">判断J</span><span
+                  class="choice_2">理解P</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-4"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-4"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片5 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">你是否喜欢调查研究型活动</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">是</span><span
+                  class="choice_2">否</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-5"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-5"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片6 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">你是否喜欢社会人际类活动</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">是</span><span
+                  class="choice_2">否</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-6"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-6"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片7 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">你是否喜欢艺术创作类活动</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">是</span><span
+                  class="choice_2">否</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-7"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-7"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣卡片8 -->
+          <div class="col-md-3 col-6">
+            <div class="card card-switch">
+              <div class="card-body">
+                <h4 class="card-title text-center text-nowrap p-1 m-1">你是否喜欢管理组织型活动</h4>
+              </div>
+              <div class="card-choice justify-content-center"><span class="choice_1">是</span><span
+                  class="choice_2">否</span></div>
+              <div class="my-3 text-center">
+                <label
+                  for="toggle-8"
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                    id="toggle-8"
+                    class="choice"
+                  >
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 信息卡片 -->
+      <div class="info">
+        <div class="row mb-4">
+          <div class="col-12 col-md-6">
+            <div class="card-info">
+              <h4>你就读的大学是？</h4>
+              <input type="text" placeholder="请输入">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card-info">
+              <h4>你学习的专业是？</h4>
+              <input type="text" placeholder="请输入">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card-info">
+              <h4>你目前的年级是？</h4>
+              <input type="text" placeholder="请输入">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card-info">
+              <h4>你的GPA为？</h4>
+              <input type="text" placeholder="请输入">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 职业卡片 -->
+      <div class="job">
+        <div class="row mb-4">
+          <!-- 职业卡片1 -->
+          <div class="col-6 col-md-4">
+            <a
+                href="jobDetails.html"
+                target="_blank"
+            >
+            <div class="card-job">
+              <img
+                src="https://www.svgrepo.com/show/133440/job-search.svg"
+                alt=""
+              >
+              <h4>人力资源</h4>
+              <ul>
+                <li>做高级人才寻访咨询</li>
+                <li>充分发挥人的潜能</li>
+                <li>需要极强的沟通协调能力</li>
+              </ul>
+            </div>
+          </a>
+          </div>
+          <!-- 职业卡片2 -->
+          <div class="col-6 col-md-4">
+            <a
+                href="jobDetails.html"
+                target="_blank"
+            >
+            <div class="card-job">
+              <img
+                src="https://www.svgrepo.com/show/307677/busines-portfolio-businessman-business-portfolio.svg"
+                alt=""
+              >
+              <h4>人事</h4>
+              <ul>
+                <li>管理员工信息等人事资料</li>
+                <li>办理人事招聘、人才引进</li>
+                <li>协助薪酬福利、绩效考核</li>
+              </ul>
+            </div>
+          </a>
+          </div>
+          <!-- 职业卡片3 -->
+          <div class="col-6 col-md-4">
+            <a
+                href="jobDetails.html"
+                target="_blank"
+            >
+            <div class="card-job">
+              <img
+                src="https://www.svgrepo.com/show/307686/business-credit-card-executive-credit-card-business-purchase-business-account.svg"
+                alt=""
+              >
+              <h4>招聘专员</h4>
+              <ul>
+                <li>负责公司内部人才的招聘</li>
+                <li>制定并执行招聘计划</li>
+                <li>建立企业人才储备库</li>
+              </ul>
+            </div>
+          </a>
+          </div>
+          <!-- 职业卡片4 -->
+          <div class="col-6 col-md-4">
+            <a
+                href="jobDetails.html"
+                target="_blank"
+            >
+            <div class="card-job">
+              <img
+                src="https://www.svgrepo.com/show/307784/employee-salary-business.svg"
+                alt=""
+              >
+              <h4>薪酬专员</h4>
+              <ul>
+                <li>撰写薪酬市场的调查</li>
+                <li>准确的核算员工工资</li>
+                <li>各类保险、积金的缴纳</li>
+              </ul>
+            </div>
+          </a>
+          </div>
+          <!-- 职业卡片5 -->
+          <div class="col-6 col-md-4">
+            <a
+                href="jobDetails.html"
+                target="_blank"
+            >
+            <div class="card-job">
+              <img
+                src="https://www.svgrepo.com/show/308133/travel-agency-travel-agent-book-travel-global-service-translation-service.svg"
+                alt=""
+              >
+              <h4>组织发展</h4>
+              <ul>
+                <li>协助组织架构优化</li>
+                <li>协助建立职位管理体系</li>
+                <li>协助任职资格模型体系建立</li>
+              </ul>
+            </div>
+          </a>
+          </div>
+          <!-- 职业卡片6 -->
+          <div class="col-6 col-md-4">
+            <a
+                href="jobDetails.html"
+                target="_blank"
+            >
+            <div class="card-job">
+              <img
+                src="https://www.svgrepo.com/show/94322/office-secretary.svg"
+                alt=""
+              >
+              <h4>行政管理</h4>
+              <ul>
+                <li>单位行政事务的管理协调</li>
+                <li>日常办公秩序维护管理</li>
+                <li>协助对外联络与接待</li>
+              </ul>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+  <br>
+
+
+  <!---这是footer--->
+  <div class="container-fluid footer mt-5">
+    <footer>
+      <br>
+      <div class="copyright">
+        &copy; Copyright <strong>YOULU</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="index.html" target="_blank">youlu</a>
+      </div>
+      <br>
+    </footer>
+  </div>
+
+
+  <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script
+    src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+    type="application/javascript"
+  ></script>
+<script src="./js/planning.js"></script>
+
+</body>
+
+</html>
